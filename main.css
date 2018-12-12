@@ -1,1 +1,9 @@
-Personal CSS
+h1 {
+  font-family: Palatino, "Palatino Linotype", serif;
+  color: rgb(46,105,163);
+  font-size: 32px;
+}
+.top_left_panel{}
+.top_right_panel{}
+.bottom_left_panel{}
+.bottom_right_pannel{}
