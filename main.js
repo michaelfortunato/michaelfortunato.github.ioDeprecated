@@ -14,8 +14,8 @@ function tiles_open() {
         '50%','0%'
       ],
       scale: [.05,1],
-      duration: 3000,
-
+      duration: 2000,
+      elasticity: 0,
     });
     anime({
       targets: 'div.quadrant_2',
@@ -27,8 +27,8 @@ function tiles_open() {
         '-50%','0%'
       ],
       scale: [.05,1],
-      duration: 3000,
-
+      duration: 2000,
+      elasticity: 0,
     });
     anime({
       targets: 'div.quadrant_3',
@@ -40,8 +40,8 @@ function tiles_open() {
         '50%','0%'
       ],
       scale: [.05,1],
-      duration: 3000,
-
+      duration: 2000,
+      elasticity: 0,
     });
     anime({
       targets: 'div.quadrant_4',
@@ -53,58 +53,35 @@ function tiles_open() {
         '-50%','0%'
       ],
       scale: [.05,1],
-      duration: 3000,
+      duration: 2000,
+      elasticity: 0,
 
     });
 }
 
-function name_animation() {
-  //http://tobiasahlin.com/moving-letters/#8
-  anime.timeline({loop: false})
-.add({
-      targets: 'div.name_container',
-      translateY: [
-        '50%','50%'
-      ],
-      translateX: {
-          value: ['0%','50%'],
-
-      },
-      duration: 2000,
-      rotate:{ value: [8,0],
-        delay: 1500,
-        duration: 1000,
-      },
-  }).add({
-      targets: 'div.F',
-      translateY: [
-        '100%','50%'
-      ],
-      translateX: [
-        '100%','50%'
-      ],
-  });
-}
-
-
-var obj = { Loading: '0%' };
-
-var JSobject = anime({
+function charge_animation() {
+  var obj = { loading: '0%' };
+  var timeline = anime.timeline();
+  timeline.add({
   targets: obj,
-  Loading: '100%',
+  loading: '100%',
   round: 1,
+  duration:2000,
   easing: 'linear',
   update: function() {
     var el = document.querySelector('#JSobject pre');
     el.innerHTML = JSON.stringify(obj);
-  },
-  duration: 1000,
+  }
+}).add({
+  targets: '#JSobject',
+  opacity: [1,0],
 });
-
-
+  return timeline;
+}
 function init(){
-  //name_animation();
-  //tiles_open();
+    charge_animation();
+    setTimeout(tiles_open, 2250);
+
 }
 
 
