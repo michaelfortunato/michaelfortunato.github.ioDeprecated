@@ -95,19 +95,21 @@ function home_to_section_animation(quadrant){
   anime.remove('div.quadrant_2');
   anime.remove('div.quadrant_3');
   anime.remove('div.quadrant_4');
+  //document.getElementById('JSobject').p.innerHTML = quadrant;
   charge_animation();
   var timeline = anime.timeline();
   timeline.add({
-    targets: 'div.quadrant_3',
+    targets: 'div.quadrant_4',
     translateX: 300,
-    duration: 700,
+    duration: 900,
     easing: 'easeOutQuad',
     offset: 0,
   }).add({
-    targets: 'div.quadrant_4',
+    targets: 'div.quadrant_3',
     translateX: 300,
-    duration: 700,
+    duration: 900,
     easing: 'linear',
+    delay: 50,
     offset: 0,
   }).add({
     targets: 'div.quadrant_1',
@@ -128,7 +130,7 @@ function home_to_section_animation(quadrant){
   setTimeout(function() {load_page(quadrant_pages[quadrant])}, 1200);
 }
 var quadrant_pages = {
-  'quadrant_1' : 'test.html',
+  'quadrant_1' : 'bio.html',
   'quadrant_2' : 'test.html',
   'quadrant_3' : 'test.html',
   'quadrant_4' : 'test.html'
