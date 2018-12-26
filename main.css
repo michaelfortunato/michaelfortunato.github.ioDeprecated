@@ -124,7 +124,13 @@
 	width: 100%;
 	display: flex;
 	align-items:center;
+	align-content:center;
 	justify-content: center;
 	background-color: #333333;
-
+	background-attachment: fixed;
+	flex-wrap: wrap;
+}
+.linebreak{
+	width: 100%;
+	height: auto;
 }
