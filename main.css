@@ -109,28 +109,64 @@
 
 /* bio.html */
 
-
-#bio_html{
-	--color1: rgba(249, 249, 249, 1);
-	--color2: rgba(193, 236, 185, 1);
-	--color3: rgba(151, 237, 111, 1);
-	--color4: rgba(93, 71, 237, 1);
-	--color5: rgba(209, 213, 206, 1);
-	--color6: rgba(20, 16, 56, 1); /*Deep Purple, A bit light*/
-	--color8: #E8F4EB;
-	--color9: #333333; /*Atom Grey, A bit light*/
-	position: absolute;
-	height: 100%;
-	width: 100%;
+.center_container {
+	padding: 10%;
+	border-style: dashed;
+	border-color: white;
 	display: flex;
 	align-items:center;
 	align-content:center;
 	justify-content: center;
-	background-color: #333333;
-	background-attachment: fixed;
 	flex-wrap: wrap;
 }
+#page_1{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top, left:0;
+	background-color: #333333;
+	display: flex;
+	align-items:center;
+	align-content:center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
 .linebreak{
 	width: 100%;
 	height: auto;
+}
+#page_2{
+	position:absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 100%;
+	display: flex;
+	align-items:center;
+	align-content:center;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: #333333;
+
+	/* Defining Transition */
+}
+
+#page_2_background_final {
+	background-color: white;
+	transition: background-color 6s;
+	position:absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 100%;
+	display: flex;
+	align-items:center;
+	align-content:center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#nav{
+	position: absolute;
 }

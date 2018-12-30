@@ -1,5 +1,3 @@
-
-
 function tiles_open() {
 //  alert("Page is loaded");
     //document.getElementsByClassName('quadrant_1')[0].id = 'init_pos';
@@ -66,7 +64,7 @@ function charge_animation() {
   targets: obj,
   loading: '100%',
   round: 1,
-  duration:1000,
+  duration:800,
   easing: 'linear',
   update: function() {
     var el = document.querySelector('#JSobject pre');
@@ -81,13 +79,11 @@ function charge_animation() {
 }
 function init(){
     charge_animation();
-    setTimeout(tiles_open, 1250);
+    setTimeout(tiles_open, 1050); //charge_animation duration + 250ms
     document.getElementsByClassName('quadrant_1')[0].onclick = function(){home_to_section_animation('quadrant_1')};
     document.getElementsByClassName('quadrant_2')[0].onclick = function(){home_to_section_animation('quadrant_2')};
     document.getElementsByClassName('quadrant_3')[0].onclick = function(){home_to_section_animation('quadrant_3')};
     document.getElementsByClassName('quadrant_4')[0].onclick = function(){home_to_section_animation('quadrant_4')};
-//    setTimeout(home_to_section_animation, 3000);
-
 }
 
 function home_to_section_animation(quadrant){
@@ -127,7 +123,7 @@ function home_to_section_animation(quadrant){
     offset: 0,
   });
 
-  setTimeout(function() {load_page(quadrant_pages[quadrant])}, 1200);
+  setTimeout(function() {load_page(quadrant_pages[quadrant])}, 1050);
 }
 var quadrant_pages = {
   'quadrant_1' : 'bio.html',
@@ -139,12 +135,35 @@ var quadrant_pages = {
 function load_page(url){
   $(":root").load(url);
 }
-//}
-//function open_animation(){
-//    center_cards();
-//}
-//function center_cards(){
-//  for (let i=1; i<5:++i) {
-//    getElementsByClassName('quadrant_'+i)
-//  }
-//}
+
+
+//  ---- bio.html  ----
+
+function page_1(){
+  scroll(10);
+}
+function scroll(height_change) {
+  $(window).scroll(function() {
+      var height = $(window).scrollTop();
+
+      if(height  > height_change) {
+          auto_scroll();
+      }
+  });
+}
+function auto_scroll(){
+   //$(document).scrollTop("500");
+   pageScroll(0);
+   document.getElementById('page_2').id = 'page_2_background_final';
+
+}
+function pageScroll(pixel) {
+    if (pixel == 500) {
+      return 0;
+    }
+    else {
+      window.scrollBy(0,1);
+      pixel++;
+      scrolldelay = setTimeout(function() {pageScroll(pixel)},100);
+    }
+}
