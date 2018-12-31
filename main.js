@@ -80,7 +80,7 @@ function charge_animation() {
 function init(){
     charge_animation();
     setTimeout(tiles_open, 1050); //charge_animation duration + 250ms
-    document.getElementsByClassName('quadrant_1')[0].onclick = function(){home_to_section_animation('quadrant_1')};
+    document.getElementsByClassName('quadrant_1')[0].onclick = function(){ home_to_section_animation('quadrant_1')};
     document.getElementsByClassName('quadrant_2')[0].onclick = function(){home_to_section_animation('quadrant_2')};
     document.getElementsByClassName('quadrant_3')[0].onclick = function(){home_to_section_animation('quadrant_3')};
     document.getElementsByClassName('quadrant_4')[0].onclick = function(){home_to_section_animation('quadrant_4')};
@@ -133,6 +133,7 @@ var quadrant_pages = {
 };
 
 function load_page(url){
+  window.location = url;
   $(":root").load(url);
 }
 
@@ -140,30 +141,35 @@ function load_page(url){
 //  ---- bio.html  ----
 
 function page_1(){
-  scroll(10);
-}
-function scroll(height_change) {
+  i = 0;
   $(window).scroll(function() {
-      var height = $(window).scrollTop();
-
-      if(height  > height_change) {
-          auto_scroll();
+      //var height = $(window).scrollTop();
+      if (i == 0) {
+        document.body.style.overflow = 'hidden';
+        window.scrollBy(0,15);
+        document.getElementById('page_2').id = 'page_2_background_final';
+        i++;
       }
-  });
+      else{
+        window.scrollBy(0,15);
+      }
+      //auto_scroll();
+      }
+    );
+  console.log('GO');
 }
+
 function auto_scroll(){
    //$(document).scrollTop("500");
-   pageScroll(0);
+   document.body.style.overflow = 'hidden';
+   pageScroll();
    document.getElementById('page_2').id = 'page_2_background_final';
-
+   //pageScroll(0);
+   //document.getElementById('page_2').id = 'page_2_background_final';
+   //console.log('finish');
 }
-function pageScroll(pixel) {
-    if (pixel == 500) {
-      return 0;
-    }
-    else {
-      window.scrollBy(0,1);
-      pixel++;
-      scrolldelay = setTimeout(function() {pageScroll(pixel)},100);
-    }
+function pageScroll() {
+    //console.log('console2')
+    window.scrollBy(0,15);
+    //scrolldelay = setTimeout(pageScroll,35000);
 }
