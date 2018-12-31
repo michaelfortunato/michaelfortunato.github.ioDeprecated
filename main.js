@@ -145,31 +145,14 @@ function page_1(){
   $(window).scroll(function() {
       //var height = $(window).scrollTop();
       if (i == 0) {
-        document.body.style.overflow = 'hidden';
-        window.scrollBy(0,15);
-        document.getElementById('page_2').id = 'page_2_background_final';
         i++;
-      }
-      else{
+        document.body.style.overflow = 'hidden';
+        document.getElementById('page_2').id = 'page_2_background_final';
         window.scrollBy(0,15);
       }
-      //auto_scroll();
+       else{
+        window.scrollBy(0,15);
       }
+    }
     );
-  console.log('GO');
-}
-
-function auto_scroll(){
-   //$(document).scrollTop("500");
-   document.body.style.overflow = 'hidden';
-   pageScroll();
-   document.getElementById('page_2').id = 'page_2_background_final';
-   //pageScroll(0);
-   //document.getElementById('page_2').id = 'page_2_background_final';
-   //console.log('finish');
-}
-function pageScroll() {
-    //console.log('console2')
-    window.scrollBy(0,15);
-    //scrolldelay = setTimeout(pageScroll,35000);
 }
