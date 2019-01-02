@@ -112,7 +112,7 @@
 .full_page {
 	position: absolute;
 	top, left: 0;
-	height: 200%;
+	height: 250%;
 	width: 100%;
 	background-color: #000000;
 }
@@ -130,7 +130,7 @@
 .page_1{
 
 	position: absolute;
-	height: 50%;
+	height: 40%;
 	width: 100%;
 	top, left:0;
 
@@ -166,10 +166,10 @@
 
 .page_2{
 	position:absolute;
-	height: 50%;
+	height: 60%;
 	width: 100%;
 	left: 0;
-	top: 50%;
+	top: 40%;
 	display: grid;
 	grid-template-columns: 20% auto 20%;
 	grid-auto-rows: 10% auto 5%;

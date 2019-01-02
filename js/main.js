@@ -142,11 +142,14 @@ function load_page(url){
 //  ---- bio.html  ----
 
 function bio_init(){
-  i = 0;
+   //40% This is the hieght of page_1
+  var i = 0;
+  var scale = .4;
   $(window).scroll(function() {
-        var scrollTop= $(window).scrollTop();
+        var scrollTop = $(window).scrollTop();
         console.log(scrollTop);
-        console.log($(window).height())
+        console.log($(window).height());
+
 
       if (i == 0) {
         i++;
@@ -154,7 +157,8 @@ function bio_init(){
         document.getElementsByClassName('page_2')[0].id = 'background_final';
         window.scrollBy(0,15);
       }
-       else if (scrollTop === $(window).height()){
+       else if (scrollTop > $(window).height())
+       {
         console.log('done!');
         document.body.style.overflow = 'visible';
       }
