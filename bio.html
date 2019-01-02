@@ -3,33 +3,105 @@
 <head>
   <meta charset="UTF-8">
 
-  <link rel='stylesheet' href='main.css' type='text/css'>
+  <link rel='stylesheet' href='css/main.css' type='text/css'>
   <link rel='stylesheet' href="css/materialize.css" type='text/css'>
 
 </head>
 
-<body onload='page_1()'>
-
-<div id ='nav'>
-    <ul>
-      <li><a href ='#Scroll Down'></a></li>
-      <li><a href ='#About me'></a></li>
-    </ul>
-</div>
-<div id='page_1'>
-  <a id='Scroll Down'></a>
+<body onload='bio_init()'>
+<div class='full_page'>
+<div class='page_1' id='#top'>
+  <!-- <a id='Scroll Down'></a>
   <div class = 'center_container'>
     <h1>Scroll Down</h1>
   </div>
+  -->
 </div>
 
-<div id='page_2'>
-  <a id='About me'></a>
-  About me
+<div class='page_2' id='#main'>
+  <!-- Header -->
+  <div class="left header"></div>
+  <div class="middle header">
+    <div id ='nav'>
+      <ul>
+        <li><a href ='#top'></a>Top</li>
+        <li><a href ='#main'>Main</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="right header" ></div>
+  <!-- Content -->
+  <div class="left content" ></div>
+  <div class="middle content">
+    <p> Hi! I'm Michael Newman Fortunato. Welcome to my website.
+      I am currently a third year at the
+      University of Chicago pursuing a B.S. in Mathematics.
+      I am using this platform as a creative space to test
+      new ideas, and quite frankly as a way for potential
+      employers to get to learn about me.
+    </p>
+    <p>
+      My interest is first a foremost theoretical mathematics and computer science.
+      I like math because it forces me to think cleanly and to visualize.
+      Computer science allows me to approach problems with sterility and intention.
+      The language of computer science and mathematics is contained,
+      and so when studyinig data structures, we are given a complete
+      understanding of them through the perspective of deductive logic.
+      So for example, we can theoretically define and completely
+      understand the concept of <b>memory</b> from the perspective of bits.
+      This to me seems like a good apprach to epistemology.
+    </p>
+    <p>
+      In that vein, my goal in life is to help create the
+      first artificial intelligence.  I believe AI will be a profound good
+      for the world,so long as it is designed with the ultimate care,
+      discretion, and patience.
+      I have always been fascinated by intelligence, and I believe this undertaking
+      will be a great exercise in epistemology and give us a better sense of what
+      it means to know, to understand, so on. A direct consequence of this
+      would be a full a complete understanding of a our brain, the most complex
+      object in the universe.
+    </p>
+    <p> I have always believed in The Great Book and in their power
+      (erroneous perhaps) to make a person more considerate, kind,
+      thoughtful, curious--a better person.
+      This has subsequently engendered an appreciation for language.
+      There is an incredible amount of cheap, misinformed ornamentation
+      in my writing (verbage, nested-clauses, etc.).
+      I am not the biggest fan, and I hope to improve by starting a
+      repository for my writings (writings.html) on my website.
+    </p>
+    <p>
+      But this appreciatation for language resulted in my finding my specific speciality
+      in AI rather quickly: Natural Language Processing and Language-Embeddings.
+    </p>
+    <p>
+      I hope to get a PhD in Computer Science specializing in the subfield
+      of language embeddings.
+      Therefore, my interests really fall in the field of natural language Processing
+      machine learning, topic-modelling, concept recognition, context recognition,
+      and vectorized word representations. A few of my favorite papers are
+      Distributed Representations of Words (Tomas Mikolov et. al),
+      Latent Dirichelect Allocation (David Blei et al),
+      kAnchor Words (Sanjeev Arora et al).
+    </p>
+  </div>
+  <div class="right content"></div>
+
+  <!-- Footer -->
+  <div class="right footer"></div>
+  <div class="middle footer">
+    <div id="bio_fancy_quote" class='center'>
+    You shall know a word by the company it keeps.
+    </div>
+  </div>
+  <div class="middle footer"></div>
 </div>
 
 
-<script src="main.js"></script>
-<script src="jQuery.js"></script>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/jQuery.js"></script>
 </body>
 </html>

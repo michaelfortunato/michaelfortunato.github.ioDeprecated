@@ -1,0 +1,79 @@
+
+bio.html description
+<p> Hi! I'm Michael Newman Fortunato. Welcome to my website.
+  I am currently a third year at the
+  University of Chicago pursuing a B.S. in Mathematics.
+  I am using this platform as a creative space to test
+  new ideas, and quite frankly as a way for potential
+  employers to get to learn about me.
+</p>
+<p>
+  My interest is first a foremost theoretical mathematics and computer science.
+  I like math because it forces me to think cleanly and to visualize.
+  Computer science allows me to approach problems with sterility and intention.
+  The language of computer science and mathematics is contained,
+  and so when studyinig data structures, we are given a complete
+  understanding of them through the perspective of deductive logic.
+  So for example, we can theoretically define and completely
+  understand the concept of <b>memory</b> from the perspective of bits.
+  This to me seems like a good apprach to epistemology.
+</p>
+<p>
+  In that vein, my goal in life is to help create the
+  first artificial intelligence.  I believe AI will be a profound good
+  for the world,so long as it is designed with the ultimate care,
+  discretion, and patience.
+  I have always been fascinated by intelligence, and I believe this undertaking
+  will be a great exercise in epistemology and give us a better sense of what
+  it means to know, to understand, so on. A direct consequence of this
+  would be a full a complete understanding of a our brain, the most complex
+  object in the universe.
+</p>
+<p> I have always believed in The Great Book and in their power
+  (erroneous perhaps) to make a person more considerate, kind,
+  thoughtful, curious--a better person.
+  This has subsequently engendered an appreciation for language.
+  There is an incredible amount of cheap, misinformed ornamentation
+  in my writing (verbage, nested-clauses, etc.).
+  I am not the biggest fan, and I hope to improve by starting a
+  repository for my writings (writings.html) on my website.
+</p>
+<p>
+  But this appreciatation for language resulted in my finding my specific speciality
+  in AI rather quickly: Natural Language Processing and Language-Embeddings.
+</p>
+<p>
+  I hope to get a PhD in Computer Science specializing in the subfield
+  of language embeddings.
+  Therefore, my interests really fall in the field of natural language Processing
+  machine learning, topic-modelling, concept recognition, context recognition,
+  and vectorized word representations. A few of my favorite papers are
+  Distributed Representations of Words (Tomas Mikolov et. al),
+  Latent Dirichelect Allocation (David Blei et al),
+  kAnchor Words (Sanjeev Arora et al).
+</p>
+</div>
+
+
+
+
+Projects.html Description
+<p> On here you will find my projects, including my Textual Factors Library,
+  which is currently being used by numberous faculty at the Univrsity of Chicago
+  Booth School of Busines. Also found here are creations I make for fun, including video games,
+  a Craiglist job search program, and new algorithms for uncovering word embeddings.
+  I am also currently implementing a few papers that I plan to post in this section.
+</p>
+
+
+writings.html description
+<p>
+  Writing is a muscle, and will atrophe when neglected.
+  I have tried to write everyday, and have failed consistently.
+  Finally I made the modest promise to write everday for a month.
+  I am now moving to digitize my journaling for ease and as a way to practice my
+  ability in running secure databases. This will require a login, for which I will be the only
+  account holder. When I can afford it, I will run my own server, which will hopefully
+  allow other users to create accounts and maintain their own blogs on my site,
+  providing a small-bussiness alternative to the mooses at WordPress<sup>TM</sup>.
+</p>

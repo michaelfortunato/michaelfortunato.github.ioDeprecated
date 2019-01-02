@@ -77,7 +77,8 @@ function charge_animation() {
 
   return timeline;
 }
-function init(){
+
+function index_init(){
     charge_animation();
     setTimeout(tiles_open, 1050); //charge_animation duration + 250ms
     document.getElementsByClassName('quadrant_1')[0].onclick = function(){ home_to_section_animation('quadrant_1')};
@@ -140,18 +141,26 @@ function load_page(url){
 
 //  ---- bio.html  ----
 
-function page_1(){
+function bio_init(){
   i = 0;
   $(window).scroll(function() {
-      //var height = $(window).scrollTop();
+        var scrollTop= $(window).scrollTop();
+        console.log(scrollTop);
+        console.log($(window).height())
+
       if (i == 0) {
         i++;
         document.body.style.overflow = 'hidden';
-        document.getElementById('page_2').id = 'page_2_background_final';
+        document.getElementsByClassName('page_2')[0].id = 'background_final';
         window.scrollBy(0,15);
       }
-       else{
+       else if (scrollTop === $(window).height()){
+        console.log('done!');
+        document.body.style.overflow = 'visible';
+      }
+      else {
         window.scrollBy(0,15);
+        i++;
       }
     }
     );
