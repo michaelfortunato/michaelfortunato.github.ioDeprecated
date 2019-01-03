@@ -367,8 +367,6 @@
 	  -webkit-animation-delay: 3s;
 }
 
-
-
 @-webkit-keyframes l3bio_down{
   0%    { height: 0%; background: #d12374; }
   100%  { height: 100%; background: #d12374; }
