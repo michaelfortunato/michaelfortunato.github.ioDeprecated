@@ -58,7 +58,7 @@ function bio_init(){
         console.log('done!');
         document.getElementById('verticle_pink').className = 'l3bio_down';
         document.getElementById('horizontal_pink').className = 'l4bio_top';
-        document.body.style.overflow = 'visible';
+        setTimeout(function() {document.body.style.overflow = 'visible';}, 3000);
       }
       else {
         window.scrollBy(0,15);
