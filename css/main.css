@@ -16,7 +16,8 @@
 	height: 100%;
 	top:0
 	left:0;
-	background-color: #333333;
+	background-color: black;
+	color:white;
 }
 
 .quadrant_1{
@@ -67,6 +68,38 @@
 	align-items: center; /* Vertical center alignment */
 	justify-content: center; /* Horizontal center alignment */
 }
+
+.quadrant_1:hover{
+	-webkit-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
+	-moz-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
+	box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
+	transform: scale(1.1);
+	transition: all 1s;
+}
+.quadrant_2:hover{
+	-webkit-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
+	-moz-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
+	box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
+ 	transform: scale(1.1);
+	transition: scale 1s;
+}
+.quadrant_3:hover{
+	-webkit-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
+	-moz-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
+	box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
+	transform: scale(1.1);
+	transition: all 1s;
+
+}
+.quadrant_4:hover{
+	-webkit-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
+	-moz-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
+	box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
+	 transform: scale(1.1);
+	transition: all 1s;
+
+}
+
 
 .hidden{
 	opacity: 0;
@@ -179,7 +212,6 @@
 	-webkit-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
 	-moz-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
 	box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
-
 }
 
 #JSobject {
