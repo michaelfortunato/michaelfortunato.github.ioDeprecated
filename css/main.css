@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'garamond';
+  src: url('../fonts/garamond/gara.ttf')  format('truetype'), /* Safari, Android, iOS */
+
+}
+
+
+
+
+
+
 #index_html{
 	--color1: rgba(249, 249, 249, 1);
 	--color2: rgba(193, 236, 185, 1);
@@ -301,7 +312,10 @@
 
 }
 
-
+.page_2 div{
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
 
 .left{
 	grid-column: : 1/1
@@ -336,6 +350,9 @@
 	font-size: 20px;
 }
 
+.page_2 h1{
+	font-family: garamond;
+}
 
 
 
@@ -357,14 +374,14 @@
 	  height:100%;
 	  width: 2px;
 	  -webkit-animation-name: l3bio_down;
-	  -webkit-animation-delay: 3s;
+	  -webkit-animation-delay: 1s;
 }
 .l4bio_top{
 		top:10%;
 	  width:100%;
 	  height: 2px;
 	  -webkit-animation-name: l4bio_top;
-	  -webkit-animation-delay: 3s;
+	  -webkit-animation-delay: 1s;
 }
 
 @-webkit-keyframes l3bio_down{

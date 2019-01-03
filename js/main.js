@@ -35,8 +35,12 @@ function show_tiles(){
 
 function bio_init(){
    //40% This is the hieght of page_1
+
+
+
+
+
   var i = 0;
-  var scale = .4;
   $(window).scroll(function() {
         var scrollTop = $(window).scrollTop();
         console.log(scrollTop);
@@ -52,6 +56,8 @@ function bio_init(){
        else if (scrollTop > $(window).height())
        {
         console.log('done!');
+        document.getElementById('verticle_pink').className = 'l3bio_down';
+        document.getElementById('horizontal_pink').className = 'l4bio_top';
         document.body.style.overflow = 'visible';
       }
       else {
