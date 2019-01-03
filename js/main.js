@@ -1,11 +1,10 @@
 
 function index_init() {
     setTimeout(show_tiles, 1200);
-    document.getElementsByClassName('quadrant_1')[0] = load_page('quadrant_1');
-    document.getElementsByClassName('quadrant_2')[0] = load_page('quadrant_2');
-    document.getElementsByClassName('quadrant_3')[0] = load_page('quadrant_3');
-    document.getElementsByClassName('quadrant_4')[0] = load_page('quadrant_4');
-
+    document.getElementsByClassName('quadrant_1')[0].onclick = function(){ load_page('quadrant_1')};
+    document.getElementsByClassName('quadrant_1')[0].onclick = function(){ load_page('quadrant_1')};
+    document.getElementsByClassName('quadrant_1')[0].onclick = function(){ load_page('quadrant_1')};
+    document.getElementsByClassName('quadrant_1')[0].onclick = function(){ load_page('quadrant_1')};
 }
 
 var quadrant_pages = {
@@ -16,8 +15,9 @@ var quadrant_pages = {
 };
 
 function load_page(url){
-  window.location = url;
-  $(":root").load(url);
+  quadrant_pages[url]
+  window.location =  quadrant_pages[url];
+  $(":root").load(  quadrant_pages[url]);
 }
 
 
