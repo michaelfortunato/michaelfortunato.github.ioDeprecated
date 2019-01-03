@@ -57,6 +57,7 @@
 	justify-content: center; /* Horizontal center alignment */
 
 
+
 }
 .quadrant_4{
 	position: absolute;
@@ -67,36 +68,31 @@
 	display:flex;
 	align-items: center; /* Vertical center alignment */
 	justify-content: center; /* Horizontal center alignment */
+
 }
 
 .quadrant_1:hover{
-	-webkit-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
-	-moz-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
-	box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
 	transform: scale(1.1);
 	transition: all 1s;
+	cursor: pointer;
 }
 .quadrant_2:hover{
-	-webkit-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
-	-moz-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
-	box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
  	transform: scale(1.1);
-	transition: scale 1s;
+	transition: all 1s;
+	cursor: pointer;
 }
 .quadrant_3:hover{
-	-webkit-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
-	-moz-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
-	box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
+
 	transform: scale(1.1);
 	transition: all 1s;
+	cursor: pointer;
 
 }
 .quadrant_4:hover{
-	-webkit-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
-	-moz-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
-	box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.57);
+
 	 transform: scale(1.1);
 	transition: all 1s;
+	cursor: pointer;
 
 }
 
@@ -126,17 +122,17 @@
 }
 
 #long.l3{
-	  right: 0;
+	  right: 50%;
 	  top: 0;
-	  height:200%;
+	  height:100%;
 	  width: 1px;
 	  -webkit-animation-name: longl3;
 	  -webkit-animation-delay: 1s;
 }
 #long.l4{
 	  left: 0;
-	  bottom: 0;
-	  width:200%;
+	  bottom: 50%;
+	  width:100%;
 	  height: 1px;
 	  -webkit-animation-name: longl4;
 	  -webkit-animation-delay: 1s;
@@ -145,34 +141,34 @@
 .l1 {
   left: 0;
   bottom: 0;
-  height: 100%;
+  height: 50%;
   width: 1px;
   -webkit-animation-name: l1;
   -webkit-animation-delay: .6s;
 }
 
 .l2 {
-  top: 0;
-  left: 0;
-  width: 100%;
+  top: 50%;
+  left: 50%;
+  width: 50%;
   height: 1px;
   -webkit-animation-name: l2;
   -webkit-animation-delay: .6s;
 }
 
 .l3 {
-  right: 0;
-  top: 0;
-  height:100%;
+  right: 50%;
+  top: 50%;
+  height:50%;
   width: 1px;
   -webkit-animation-name: l3;
   -webkit-animation-delay: .6s;
 }
 
 .l4 {
-  bottom: 0;
-  right: 0;
-  width: 100%;
+  bottom: 50%;
+  left: 0;
+  width: 50%;
   height: 1px;
   -webkit-animation-name: l4;
 	-webkit-animation-delay: .4s;
@@ -184,27 +180,27 @@
 
 @-webkit-keyframes l2 {
   0%    { width: 0; background: #66d664; }
-  100%  { width: 100%; background: #66d664; }
+  100%  { width: 50%; background: #66d664; }
 }
 
 @-webkit-keyframes l3 {
   0%    { height: 0%; background: #66d664; }
-  100%  { height: 100%; background: #66d664; }
+  100%  { height: 50%; background: #66d664; }
 }
 
 @-webkit-keyframes longl3 {
   0%    { height: 0%; background: #66d664; }
-  100%  { height: 200%; background: #66d664; }
+  100%  { height: 100%; background: #66d664; }
 }
 
 @-webkit-keyframes longl4 {
   0%    { width: 0; background: #66d664; }
-  100%  { width: 200%; background: #66d664; }
+  100%  { width: 100%; background: #66d664; }
 }
 
 @-webkit-keyframes l4 {
   0%    { width: 0; background: #000; }
-  100%  { width: 100%; background: #000; }
+  100%  { width: 50%; background: #000; }
 }
 
 
@@ -232,7 +228,11 @@
 	filter: blur(10px);
 }
 
-/* bio.html */
+
+
+
+
+/* - - - - - - -- - - - bio.html   - - - - - - - -- - - - - -- */
 
 .full_page {
 	position: absolute;
@@ -282,7 +282,7 @@
 
 #background_final{
 	background-color: white;
-	transition: background-color 10s;
+	transition: background-color 2s  cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 #nav{
@@ -331,4 +331,47 @@
 	font-style: italic;
 	font-weight: bold;
 	font-size: 20px;
+}
+
+
+
+
+
+.l3bio_down,.l4bio_top{
+  position: absolute;
+  background: transparent;
+  width: 0px;
+  height: 0px;
+
+  -webkit-animation-duration: .4s;
+  -webkit-animation-iteration-count:1;
+  -webkit-animation-timing-function: easeInQuart;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.l3bio_down{
+		left:15%;
+	  height:100%;
+	  width: 1px;
+	  -webkit-animation-name: l3bio_down;
+	  -webkit-animation-delay: 3s;
+}
+.l4bio_top{
+		top:10%;
+	  width:100%;
+	  height: 1px;
+	  -webkit-animation-name: l4bio_top;
+	  -webkit-animation-delay: 3s;
+}
+
+
+
+@-webkit-keyframes l3bio_down{
+  0%    { height: 0%; background: #d12374; }
+  100%  { height: 100%; background: #d12374; }
+}
+
+@-webkit-keyframes l4bio_top {
+  0%    { width: 0; background: #d12374; }
+  100%  { width: 100%; background: #d12374; }
 }
