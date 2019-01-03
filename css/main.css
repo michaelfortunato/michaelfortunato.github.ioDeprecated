@@ -253,13 +253,22 @@
 	background-color: #000000;
 }
 
-.top_button_container{
+.top_button{
   position: fixed;
-  bottom:10%;
+  bottom:5%;
   right:10%;
   z-index:4;
-
+  opacity:0;
 }
+.rotate {
+  -webkit-animation:spin .25s linear forwards;
+  -moz-animation:spin .25 linear forwards;
+  animation:spin .25s linear forwards;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(180deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(180deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(180deg); transform:rotate(180deg); } }
+
 
 .nav_button {
   position: fixed;
@@ -268,7 +277,7 @@
   left:10%;
   z-index:4;
 }
-#nav_button_show{
+#button_show{
   opacity: 1;
   transition: opacity 2s  cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
