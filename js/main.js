@@ -35,36 +35,34 @@ function show_tiles(){
 
 function bio_init(){
    //40% This is the hieght of page_1
-
-
-
-
-
   var i = 0;
-  $(window).scroll(function() {
+  $(window).scroll(function() {scrollDown()});
+  document.getElementById('top_button').onclick = function() {
+      window.scrollBy(0, -1);
+      $(window).off();
+      i = 0;
+      $setTimeout((window).scroll(function() {scrollDown()}), 0);
+  };
+  var scrollDown = function() {
         var scrollTop = $(window).scrollTop();
-        console.log(scrollTop);
-        console.log($(window).height());
-
-
-      if (i == 0) {
-        i++;
-        document.body.style.overflow = 'hidden';
-        document.getElementsByClassName('page_2')[0].id = 'background_final';
-        window.scrollBy(0,15);
-      }
-       else if (scrollTop > $(window).height())
-       {
-        console.log('done!');
-        document.getElementsByClassName('nav_button')[0].id = 'nav_button_show';
-        document.getElementById('verticle_pink').className = 'l3bio_down';
-        document.getElementById('horizontal_pink').className = 'l4bio_top';
-        setTimeout(function() {document.body.style.overflow = 'visible';}, 3000);
-      }
-      else {
-        window.scrollBy(0,15);
-        i++;
-      }
-    }
-    );
+        if (i == 0) {
+          console.log('yes')
+          document.body.style.overflow = 'hidden';
+          document.getElementsByClassName('page_2')[0].id = 'background_final';
+          window.scrollBy(0,15);
+          i++;
+        }
+        else if (scrollTop > $(window).height())
+        {
+          console.log('done!');
+          document.getElementsByClassName('nav_button')[0].id = 'nav_button_show';
+          document.getElementById('verticle_pink').className = 'l3bio_down';
+          document.getElementById('horizontal_pink').className = 'l4bio_top';
+          setTimeout(function() {document.body.style.overflow = 'visible';}, 3000);
+        }
+        else {
+          window.scrollBy(0,15);
+          i++;
+        }
+  };
 }
