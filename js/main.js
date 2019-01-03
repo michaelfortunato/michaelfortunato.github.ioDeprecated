@@ -56,6 +56,7 @@ function bio_init(){
        else if (scrollTop > $(window).height())
        {
         console.log('done!');
+        document.getElementsByClassName('nav_button')[0].id = 'nav_button_show';
         document.getElementById('verticle_pink').className = 'l3bio_down';
         document.getElementById('horizontal_pink').className = 'l4bio_top';
         setTimeout(function() {document.body.style.overflow = 'visible';}, 3000);
