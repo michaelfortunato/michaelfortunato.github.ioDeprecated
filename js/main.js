@@ -1,6 +1,11 @@
 
 function index_init() {
-    setTimeout(show_tiles, 1000);
+    setTimeout(show_tiles, 1200);
+    document.getElementsByClassName('quadrant_1')[0] = load_page('quadrant_1');
+    document.getElementsByClassName('quadrant_2')[0] = load_page('quadrant_2');
+    document.getElementsByClassName('quadrant_3')[0] = load_page('quadrant_3');
+    document.getElementsByClassName('quadrant_4')[0] = load_page('quadrant_4');
+
 }
 
 var quadrant_pages = {
