@@ -36,15 +36,15 @@ function show_tiles(){
 function bio_init(){
    //40% This is the hieght of page_1
   var i = 0;
+  scroll_up = false;
   $(window).scroll(function() {scrollDown()});
   document.getElementById('top_button').onclick = function() {
-      window.scrollBy(0, -1);
-      $(window).off();
-      i = 0;
-      $setTimeout((window).scroll(function() {scrollDown()}), 0);
+      scroll_up = true;
+      window.scrollBy(0,-15)
   };
   var scrollDown = function() {
-        var scrollTop = $(window).scrollTop();
+    var scrollTop = $(window).scrollTop();
+    if (!scroll_up){
         if (i == 0) {
           console.log('yes')
           document.body.style.overflow = 'hidden';
@@ -64,5 +64,17 @@ function bio_init(){
           window.scrollBy(0,15);
           i++;
         }
+    }
+    else {
+      if (scrollTop == 0){
+          document.getElementsByClassName('nav_button')[0].removeAttribute('id');
+          document.getElementById('verticle_pink').removeAttribute('class');
+          document.getElementById('horizontal_pink').removeAttribute('class');
+          scroll_up = false;
+      }
+      else {
+        window.scrollBy(0,-15);
+      }
+    }
   };
 }
