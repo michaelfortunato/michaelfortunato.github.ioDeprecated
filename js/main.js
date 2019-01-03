@@ -1,90 +1,5 @@
-function tiles_open() {
-//  alert("Page is loaded");
-    //document.getElementsByClassName('quadrant_1')[0].id = 'init_pos';
-    document.getElementsByClassName('tiles')[0].style.display = 'initial';
-    anime({
-      targets: 'div.quadrant_1',
-
-      translateY: [
-        '50%','0%'
-      ],
-      translateX: [
-        '50%','0%'
-      ],
-      scale: [.05,1],
-      duration: 2000,
-      elasticity: 0,
-    });
-    anime({
-      targets: 'div.quadrant_2',
-
-      translateY: [
-        '50%','0%'
-      ],
-      translateX: [
-        '-50%','0%'
-      ],
-      scale: [.05,1],
-      duration: 2000,
-      elasticity: 0,
-    });
-    anime({
-      targets: 'div.quadrant_3',
-
-      translateY: [
-        '-50%','0%'
-      ],
-      translateX: [
-        '50%','0%'
-      ],
-      scale: [.05,1],
-      duration: 2000,
-      elasticity: 0,
-    });
-    anime({
-      targets: 'div.quadrant_4',
-
-      translateY: [
-        '-50%','0%'
-      ],
-      translateX: [
-        '-50%','0%'
-      ],
-      scale: [.05,1],
-      duration: 2000,
-      elasticity: 0,
-
-    });
-}
-
-function charge_animation() {
-  var obj = { loading: '0%' };
-  var timeline = anime.timeline();
-  timeline.add({
-  targets: obj,
-  loading: '100%',
-  round: 1,
-  duration:800,
-  easing: 'linear',
-  update: function() {
-    var el = document.querySelector('#JSobject pre');
-    el.innerHTML = JSON.stringify(obj);
-  }
-  }).add({
-    targets: '#JSobject',
-    opacity: [1,0],
-  });
-
-  return timeline;
-}
-
-function index_init(){
-    charge_animation();
-    setTimeout(tiles_open, 1050); //charge_animation duration + 250ms
-    document.getElementsByClassName('quadrant_1')[0].onclick = function(){ home_to_section_animation('quadrant_1')};
-    document.getElementsByClassName('quadrant_2')[0].onclick = function(){home_to_section_animation('quadrant_2')};
-    document.getElementsByClassName('quadrant_3')[0].onclick = function(){home_to_section_animation('quadrant_3')};
-    document.getElementsByClassName('quadrant_4')[0].onclick = function(){home_to_section_animation('quadrant_4')};
+function index_init() {
+  document.getElementsByClassName
 }
 
 function home_to_section_animation(quadrant){
@@ -137,6 +52,9 @@ function load_page(url){
   window.location = url;
   $(":root").load(url);
 }
+
+
+
 
 
 //  ---- bio.html  ----
