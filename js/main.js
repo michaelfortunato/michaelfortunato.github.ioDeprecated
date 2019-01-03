@@ -1,46 +1,8 @@
+
 function index_init() {
-  document.getElementsByClassName
+    setTimeout(show_tiles, 1000);
 }
 
-function home_to_section_animation(quadrant){
-  anime.remove('div.quadrant_1');
-  anime.remove('div.quadrant_2');
-  anime.remove('div.quadrant_3');
-  anime.remove('div.quadrant_4');
-  //document.getElementById('JSobject').p.innerHTML = quadrant;
-  charge_animation();
-  var timeline = anime.timeline();
-  timeline.add({
-    targets: 'div.quadrant_4',
-    translateX: 300,
-    duration: 900,
-    easing: 'easeOutQuad',
-    offset: 0,
-  }).add({
-    targets: 'div.quadrant_3',
-    translateX: 300,
-    duration: 900,
-    easing: 'linear',
-    delay: 50,
-    offset: 0,
-  }).add({
-    targets: 'div.quadrant_1',
-    translateX: 300,
-    duration: 700,
-    easing: 'easeInQuad',
-    delay: 10,
-    offset: 0,
-  }).add({
-    targets: 'div.quadrant_2',
-    translateX: 300,
-    duration: 700,
-    easing: 'easeInBack',
-    delay: 10,
-    offset: 0,
-  });
-
-  setTimeout(function() {load_page(quadrant_pages[quadrant])}, 1050);
-}
 var quadrant_pages = {
   'quadrant_1' : 'bio.html',
   'quadrant_2' : 'test.html',
@@ -53,6 +15,13 @@ function load_page(url){
   $(":root").load(url);
 }
 
+
+function show_tiles(){
+  document.getElementsByClassName('hidden')[0].id = 'show';
+  document.getElementsByClassName('hidden')[1].id = 'show';
+  document.getElementsByClassName('hidden')[2].id = 'show';
+  document.getElementsByClassName('hidden')[3].id = 'show';
+}
 
 
 
