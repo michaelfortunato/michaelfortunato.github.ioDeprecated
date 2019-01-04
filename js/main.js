@@ -35,6 +35,9 @@ function show_tiles(){
 
 function bio_init(){
    //40% This is the hieght of page_1
+   $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
   var i = 0;
   scroll_up = false;
   $(window).scroll(function() {scrollDown()});
