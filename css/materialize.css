@@ -5519,9 +5519,10 @@ button.btn-floating {
 
 .btn-large {
   height: 54px;
+  width: 100px;
   line-height: 54px;
   font-size: 15px;
-  padding: 0 28px;
+  padding: 0 0;
 }
 
 .btn-large i {
