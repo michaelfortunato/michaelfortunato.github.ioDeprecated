@@ -339,6 +339,9 @@
 	grid-auto-rows: 10% auto 10%;
 
 }
+.left.header h3 {
+  color: #d12374;
+}
 
 .page_2 div{
 	padding-left: 10px;
@@ -381,6 +384,9 @@
 .page_2 h1{
 	font-family: garamond;
 }
+.newline{
+  width: 100%;
+}
 
 
 
@@ -418,6 +424,103 @@
 }
 
 @-webkit-keyframes l4bio_top {
+  from    { width: 0; background: #d12374; }
+  to  { width: 100%; background: #d12374; }
+}
+
+
+/* Timeline*/
+.time_line {
+  position: relative;
+  max-width: 1200px;
+  margin-top: 20%;
+  height: 100%;
+}
+
+/* The actual timeline (the vertical ruler) */
+.time_line::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #e99203;
+  border-radius: 50px;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+
+
+
+
+/*===========================================
+                Projects.html
+============================================*/
+
+/* Grid layout */
+.projects_full_page {
+  display: grid;
+  grid-template-columns: 10% auto 30%;
+	grid-auto-rows: 10% auto 10%;
+
+}
+
+/* Lines Section */
+
+.l3project,.l4project{
+  position: absolute;
+  background: transparent;
+  width: 0px;
+  height: 0px;
+
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count:1;
+  -webkit-animation-timing-function: easeInQuart;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.l3project{
+	  height:100%;
+	  width: 2px;
+	  -webkit-animation-name: l3project;
+	  -webkit-animation-delay: 1s;
+    background: #d12374;
+}
+.l4project{
+	  width:100%;
+	  height: 2px;
+	  -webkit-animation-name: l4project;
+	  -webkit-animation-delay: 1s;
+    background: #d12374;
+}
+
+
+@-webkit-keyframes l3project{
+  from    { height: 50%; background: #d12374; }
+  to  { height: 0%; background: #d12374; }
+}
+@-webkit-keyframes l4project {
   from    { width: 0; background: #d12374; }
   to  { width: 100%; background: #d12374; }
 }
