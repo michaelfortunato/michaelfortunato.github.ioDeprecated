@@ -369,6 +369,8 @@
 }
 
 .center{
+  height:100%;
+  width: 100#;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -428,46 +430,53 @@
   to  { width: 100%; background: #d12374; }
 }
 
-
+/*  background-color: #e99203;
 /* Timeline*/
-.time_line {
-  position: relative;
-  max-width: 1200px;
-  margin-top: 20%;
-  height: 100%;
-}
-
-/* The actual timeline (the vertical ruler) */
-.time_line::after {
-  content: '';
+.timeline {
   position: absolute;
-  width: 6px;
   background-color: #e99203;
+  width: 4px;
+  height: 80%;
   border-radius: 50px;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
+  margin-top: 2px;
 }
-/* Container around content */
-.container {
-  padding: 10px 40px;
+#line_center{
+  display: flex;
+  justify-content: center;
+
+}
+.timeline_item_left{
   position: relative;
-  background-color: inherit;
+  float:left;
+  top:10px;
   width: 50%;
+  height: 10%;
+  padding: 5%;
+  background-color: black;
+  background-clip: content-box;
 }
-/* The circles on the timeline */
-.container::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #FF9F55;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
+.timeline_item_right{
+  position: relative;
+  top:10px;
+  float:right;
+  width:50%;
+  height: 10%;
+  padding: 0px;
+  background-clip: content-box;
+
+  background-color: black;
+}
+.circle_left{
+  width:4px;
+  height: 4px;
+  top, right:0;
+  background-color: #70b398
+}
+.circle_right{
+  border-radius: 50px;
+  top, left:0;
+  width, height:4px
+  background-color: #70b398;
 }
 
 
