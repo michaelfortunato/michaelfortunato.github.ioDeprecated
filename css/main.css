@@ -370,7 +370,7 @@
 
 .center{
   height:100%;
-  width: 100#;
+  width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -456,16 +456,9 @@
   left: 90%;
   width:10%;
   height: 10%;
-  background-color: black;
+  padding:10px;
 }
-.timeline_item_right{
-  position: absolute;
-  top: 10%;
-  left: 90%;
-  width:10%;
-  height: 10%;
-  background-color: black;
-}
+
 .circle_left{
   position: absolute;
   right: 0;
@@ -488,6 +481,12 @@
   z-index: 3
 }
 
+.timeline_content{
+  margin: 4px;
+  border-style: inset;
+  height: 100%;
+  width: 100%;
+}
 
 
 
