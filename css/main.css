@@ -274,7 +274,7 @@
   position: fixed;
   opacity:0;
   top:60%;
-  left: calc(10% - 100px); /* 100px is the width of the block*/
+  left: 0px; /*calc(10% - 100px); /* 100px is the width of the block*/
   z-index:4;
 }
 #button_show{
@@ -335,7 +335,7 @@
 	left: 0;
 	top: 40%;
 	display: grid;
-	grid-template-columns: 10% auto 30%;
+	grid-template-columns: 20% auto 30%;
 	grid-auto-rows: 10% auto 10%;
 
 }
@@ -406,7 +406,7 @@
 }
 
 .l3bio_down{
-		left:10%;
+		left:20%;
 	  height:100%;
 	  width: 2px;
 	  -webkit-animation-name: l3bio_down;
@@ -436,9 +436,9 @@
   position: absolute;
   background-color: #e99203;
   width: 4px;
-  height: 80%;
+  height: 120%;
   top: 10%;
-  right:10%;
+  right:15%;
   border-radius: 50px;
   margin-top: 2px;
   padding: 0px;
@@ -452,9 +452,9 @@
 }
 .timeline_item_left{
   position: absolute;
-  right:calc(10% + 12px);
-  width:10%;
-  height: 10%;
+  right:calc(15% + 12px);
+  width:15%;
+  height: 15%;
   padding:10px;
 }
 .circle_left{
@@ -483,9 +483,9 @@
 
 .timeline_item_right{
   position: absolute;
-  left: 90%;
-  width:10%;
-  height: 10%;
+  left: 85%;
+  width:15%;
+  height: 15%;
   padding:10px;
 }
 
