@@ -245,12 +245,14 @@
 
 /* - - - - - - -- - - - bio.html   - - - - - - - -- - - - - -- */
 
+.body_background{
+  background-color: black;
+}
 .full_page {
 	position: absolute;
 	top, left: 0;
 	height: 250%;
 	width: 100%;
-	background-color: #000000;
 }
 
 .top_button{
@@ -322,7 +324,7 @@
 
 
 #background_final{
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.20);
 	transition: background-color 2s  cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
@@ -421,8 +423,8 @@
 }
 
 @-webkit-keyframes l3bio_down{
-  from    { height: 0%; background: #d12374; }
-  to  { height: 100%; background: #d12374; }
+  from    { height: 100%; background: #d12374; }
+  to  { height: 0%; background: #d12374; }
 }
 
 @-webkit-keyframes l4bio_top {
@@ -436,7 +438,7 @@
   position: absolute;
   background-color: #e99203;
   width: 4px;
-  height: 120%;
+  height: 100%;
   top: 10%;
   right:15%;
   border-radius: 50px;

@@ -61,7 +61,7 @@ function bio_init(){
         if (i == 0) {
           console.log('yes')
           document.body.style.overflow = 'hidden';
-          document.getElementsByClassName('page_2')[0].id = 'background_final';
+          document.body.id = 'background_final';
           window.scrollBy(0,15);
           i++;
         }
@@ -84,7 +84,7 @@ function bio_init(){
           document.getElementsByClassName('nav_button')[0].removeAttribute('id');
           document.getElementById('verticle_pink').removeAttribute('class');
           document.getElementById('horizontal_pink').removeAttribute('class');
-          document.getElementsByClassName('page_2')[0].removeAttribute('id');
+          //document.getElementsByClassName('page_2')[0].removeAttribute('id');
       }
       else {
         window.scrollBy(0,-15);
